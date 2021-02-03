@@ -1,4 +1,5 @@
 {
+  "homepage": "http://rakunn.github.io/products-page",
   "name": "trial_assignment",
   "version": "0.1.0",
   "private": true,
@@ -28,7 +29,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +51,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "prettier": "^2.2.1"
   },
   "jest": {

@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { DataInput } from '../../components/DataInput/DataInput';
 import { DataOutput } from '../../components/DataOutput/DataOutput';
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content } = Layout;
 
 export enum AvailablePages {
   INPUT_PAGE = 'INPUT_PAGE',

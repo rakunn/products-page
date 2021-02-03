@@ -34,13 +34,6 @@ export const CSVFileInput: React.FC<CSVFileInputProps> = ({ setData }) => {
     // TODO possible enhancement
   };
 
-  const handleRemoveFile = (e: any) => {
-    // Note that the ref is set async, so it might be null at some point
-    if (buttonRef.current) {
-      buttonRef.current.removeFile(e);
-    }
-  };
-
   return (
     <Row gutter={8}>
       <Col span={16}>
@@ -61,7 +54,7 @@ export const CSVFileInput: React.FC<CSVFileInputProps> = ({ setData }) => {
           onRemoveFile={handleOnRemoveFile}
           noProgressBar={true}
         >
-          {({ file }: any) => (
+          {() => (
             <Button
               type="primary"
               onClick={handleOpenDialog}

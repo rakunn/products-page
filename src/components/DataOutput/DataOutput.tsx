@@ -11,7 +11,7 @@ const PageContainer = styled.div`
 `;
 
 export const DataOutput = () => {
-  const { name, email, gender, country, age, city, ...test } = useSelector(
+  const { name, email, gender, country, age, city } = useSelector(
     (state: any) => state.form
   );
 
