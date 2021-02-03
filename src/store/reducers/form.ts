@@ -3,22 +3,22 @@ import { FormAction, FormActionNames } from '../actions/form';
 export type ParsedCSV = Array<{ data: string[] }>;
 
 export interface FormState {
-  name: string;
-  gender: string;
-  age: string;
-  email: string;
-  country: string;
-  city: string;
+  name?: string;
+  gender?: string;
+  age?: string;
+  email?: string;
+  country?: string;
+  city?: string;
   data: ParsedCSV;
 }
 
 const initialState: FormState = {
-  name: '',
-  gender: 'Unspecified',
-  age: '',
-  email: '',
-  country: '',
-  city: '',
+  name: undefined,
+  gender: undefined,
+  age: undefined,
+  email: undefined,
+  country: undefined,
+  city: undefined,
   data: [],
 };
 
