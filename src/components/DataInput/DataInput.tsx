@@ -30,7 +30,6 @@ export const DataInput: React.FC<DataInputProps> = ({ setSelectedPage }) => {
   };
 
   const onFinishFailed = () => {
-    console.log('asd');
     // TODO possible enhancement
   };
 

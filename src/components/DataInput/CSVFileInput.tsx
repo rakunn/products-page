@@ -22,10 +22,6 @@ export const CSVFileInput: React.FC<CSVFileInputProps> = ({ setData }) => {
   };
 
   const handleOnFileLoad = (data: ParsedCSV, file: File) => {
-    console.log('---------------------------');
-    console.log(file);
-    console.log(data);
-    console.log('---------------------------');
     setFile(file);
     setData(data);
   };

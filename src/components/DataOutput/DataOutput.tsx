@@ -14,7 +14,7 @@ export const DataOutput = () => {
   const { name, email, gender, country, age, city, ...test } = useSelector(
     (state: any) => state.form
   );
-  console.log(test);
+
   return (
     <PageContainer>
       <Row>
